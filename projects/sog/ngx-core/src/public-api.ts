@@ -9,4 +9,4 @@ export * from './lib/core/ngx-core.module';
 
 //util
 export * from './lib/util/util.module'
-export * from './lib/util/user-info/user-info.component'
+export * from './lib/util/user-info.component'

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { UserInfoComponent } from './user-info/user-info.component';
+import { UserInfoComponent } from './user-info.component';
 
 import { NgxCoreModule} from '../core/ngx-core.module'
 

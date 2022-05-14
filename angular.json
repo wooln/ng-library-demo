@@ -100,6 +100,37 @@
           }
         }
       }
+    },
+    "@sog/ngx-core": {
+      "projectType": "library",
+      "root": "projects/sog/ngx-core",
+      "sourceRoot": "projects/sog/ngx-core/src",
+      "prefix": "sog",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/sog/ngx-core/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/sog/ngx-core/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/sog/ngx-core/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/sog/ngx-core/src/test.ts",
+            "tsConfig": "projects/sog/ngx-core/tsconfig.spec.json",
+            "karmaConfig": "projects/sog/ngx-core/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "showcase"

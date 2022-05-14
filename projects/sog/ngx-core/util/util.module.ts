@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserInfoComponent } from './user-info.component';
 
-import { NgxCoreModule} from '../core/ngx-core.module'
+import { NgxCoreModule} from '@sog/ngx-core/core'
 
 
 @NgModule({

@@ -4,9 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import {  NgxCoreModule } from '@sog/ngx-core'
-import {  UtilModule } from '@sog/ngx-core'
-
+import {  NgxCoreModule } from '@sog/ngx-core/core'
+import {  UtilModule } from '@sog/ngx-core/util'
 
 @NgModule({
   declarations: [
@@ -15,6 +14,7 @@ import {  UtilModule } from '@sog/ngx-core'
   imports: [
     BrowserModule,
     AppRoutingModule,
+    
     NgxCoreModule,
     UtilModule,
   ],

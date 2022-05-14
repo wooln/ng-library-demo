@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserInfoComponent } from './user-info/user-info.component';
 
+import { NgxCoreModule} from '../core/ngx-core.module'
 
 
 @NgModule({
@@ -9,7 +10,8 @@ import { UserInfoComponent } from './user-info/user-info.component';
     UserInfoComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgxCoreModule,
   ],
   exports: [
     UserInfoComponent

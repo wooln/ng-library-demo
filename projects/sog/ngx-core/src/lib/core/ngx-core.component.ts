@@ -2,13 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'sog-ngx-core',
-  template: `
-    <p>
-      ngx-core works!
-    </p>
-  `,
-  styles: [
-  ]
+  templateUrl: './ngx-core.component.html',
+  styleUrls: ['./ngx-core.component.css'],
 })
 export class NgxCoreComponent implements OnInit {
 
